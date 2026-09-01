@@ -788,6 +788,66 @@ a {
     transform: scale(1.05);
 }
 
+.project-live-preview > img {
+    position: absolute;
+    inset: 0;
+}
+
+.live-browser-preview {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+
+    height: 230px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+
+    background: var(--white);
+
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+}
+
+.live-browser-bar {
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 0 13px;
+
+    border-bottom: 1px solid var(--line);
+    background: #f4f4f1;
+}
+
+.live-browser-bar span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    background: #cfcfca;
+}
+
+.live-browser-bar span:first-child {
+    background: var(--accent);
+}
+
+.live-browser-preview iframe {
+    width: 1440px;
+    height: 900px;
+
+    border: 0;
+
+    transform: scale(0.23);
+    transform-origin: top left;
+    pointer-events: none;
+}
+
 .project-category {
     position: absolute;
     top: 18px;
@@ -1124,6 +1184,20 @@ a {
 .project-link-primary:hover {
     background: var(--accent);
     color: var(--white);
+    transform: translateY(-2px);
+}
+
+.project-link-secondary {
+    min-height: 42px;
+    padding: 0 15px;
+
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--black);
+}
+
+.project-link-secondary:hover {
+    border-color: var(--black);
     transform: translateY(-2px);
 }
 
@@ -1568,6 +1642,21 @@ a {
         height: 220px;
     }
 
+    .live-browser-preview {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        height: 160px;
+    }
+
+    .live-browser-bar {
+        height: 30px;
+    }
+
+    .live-browser-preview iframe {
+        transform: scale(0.16);
+    }
+
     .project-content {
         padding: 22px;
     }
@@ -1592,6 +1681,15 @@ a {
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
+    }
+
+    .project-links {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .project-links a {
+        justify-content: center;
     }
 
 

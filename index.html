@@ -429,11 +429,25 @@
                     <!-- PROJECT 1 -->
                     <article class="project-card">
 
-                        <div class="project-image">
+                        <div class="project-image project-live-preview">
                             <img
                                 src="img/musik_website.png"
                                 alt="Music Website"
                             >
+
+                            <div class="live-browser-preview" aria-hidden="true">
+                                <div class="live-browser-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <iframe
+                                    src="https://music-website-tan.vercel.app/"
+                                    title="Live preview Music Website"
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
 
                             <span class="project-category">
                                 Full Stack Laravel
@@ -467,6 +481,11 @@
                                 <span>
                                     <i class="fa-solid fa-layer-group"></i>
                                     Public Website
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-signal"></i>
+                                    Live on Vercel
                                 </span>
 
                                 <span>
@@ -510,13 +529,23 @@
                             <div class="project-links">
 
                                 <a
-                                    href="https://github.com/Rozak27K/music-website"
+                                    href="https://music-website-tan.vercel.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="project-link-primary"
                                 >
-                                    Source Code
+                                    Live Demo
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                                <a
+                                    href="https://github.com/Rozak27K/music-website"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link-secondary"
+                                >
+                                    Source Code
+                                    <i class="fa-brands fa-github"></i>
                                 </a>
 
                             </div>
